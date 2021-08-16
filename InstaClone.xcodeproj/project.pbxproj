@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		5B20906926CA6E4B003A8279 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B20906826CA6E4B003A8279 /* Preview Assets.xcassets */; };
 		5B20907426CA6E4C003A8279 /* InstaCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B20907326CA6E4C003A8279 /* InstaCloneTests.swift */; };
 		5B20907F26CA6E4C003A8279 /* InstaCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B20907E26CA6E4C003A8279 /* InstaCloneUITests.swift */; };
+		5B20908F26CA8805003A8279 /* landscape.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5B20908E26CA8804003A8279 /* landscape.jpg */; };
+		5B20909226CAA46D003A8279 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 5B20909126CAA46D003A8279 /* Kingfisher */; };
+		5B20909626CAAF47003A8279 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B20909526CAAF47003A8279 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,8 @@
 		5B20907A26CA6E4C003A8279 /* InstaCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B20907E26CA6E4C003A8279 /* InstaCloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaCloneUITests.swift; sourceTree = "<group>"; };
 		5B20908026CA6E4C003A8279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B20908E26CA8804003A8279 /* landscape.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = landscape.jpg; path = ../../../../../Downloads/landscape.jpg; sourceTree = "<group>"; };
+		5B20909526CAAF47003A8279 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B20909226CAA46D003A8279 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,7 +103,9 @@
 			children = (
 				5B20906126CA6E48003A8279 /* InstaCloneApp.swift */,
 				5B20906326CA6E48003A8279 /* ContentView.swift */,
+				5B20909526CAAF47003A8279 /* HeaderView.swift */,
 				5B20906526CA6E4B003A8279 /* Assets.xcassets */,
+				5B20908E26CA8804003A8279 /* landscape.jpg */,
 				5B20906A26CA6E4B003A8279 /* Info.plist */,
 				5B20906726CA6E4B003A8279 /* Preview Content */,
 			);
@@ -146,6 +154,9 @@
 			dependencies = (
 			);
 			name = InstaClone;
+			packageProductDependencies = (
+				5B20909126CAA46D003A8279 /* Kingfisher */,
+			);
 			productName = InstaClone;
 			productReference = 5B20905E26CA6E48003A8279 /* InstaClone.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +228,9 @@
 				Base,
 			);
 			mainGroup = 5B20905526CA6E48003A8279;
+			packageReferences = (
+				5B20909026CAA46D003A8279 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 5B20905F26CA6E48003A8279 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -235,6 +249,7 @@
 			files = (
 				5B20906926CA6E4B003A8279 /* Preview Assets.xcassets in Resources */,
 				5B20906626CA6E4B003A8279 /* Assets.xcassets in Resources */,
+				5B20908F26CA8805003A8279 /* landscape.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B20906426CA6E48003A8279 /* ContentView.swift in Sources */,
+				5B20909626CAAF47003A8279 /* HeaderView.swift in Sources */,
 				5B20906226CA6E48003A8279 /* InstaCloneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -574,6 +590,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5B20909026CAA46D003A8279 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5B20909126CAA46D003A8279 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B20909026CAA46D003A8279 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5B20905626CA6E48003A8279 /* Project object */;
 }

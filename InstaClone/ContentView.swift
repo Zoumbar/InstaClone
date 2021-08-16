@@ -6,16 +6,16 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        HeaderView(postCount: 78, followers: 4685)
     }
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
 }
+
